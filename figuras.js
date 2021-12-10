@@ -29,6 +29,16 @@ console.group("Triángulo");
 
     }
 
+    function alturaIsoceles(lado1, lado2, base) {
+
+        const ladoCuadr = lado1 * lado2;
+        const baseEleDos = base * base;
+
+        const altu = Math.sqrt(ladoCuadr - (baseEleDos / 4));
+        return altu;
+
+    }
+
 console.groupEnd();
 
 
@@ -67,7 +77,7 @@ console.group("Círculo");
 console.groupEnd();
 
 
-
+// ********************************************************************************
 // Aquí interactuamos con el HTML
 
 // Funciones calculos cuadrado
@@ -116,6 +126,24 @@ function calcularAreaCuadrado(){
         const areaTri = areaTriangulo(valuebaTri,valueAlTri);
         alert(areaTri);
 
+    }
+
+    function calcularAlturaIsoceles(){
+
+        const inputL1Tri = document.getElementById("inputL1Triangulo");
+        const inputL2Tri = document.getElementById("inputL2Triangulo");
+        const inputbaTri = document.getElementById("inputbaTriangulo");
+        const valueL1Tri = Number(inputL1Tri.value);
+        const valueL2Tri = Number(inputL2Tri.value) ;
+        const valuebaTri = Number(inputbaTri.value);
+
+        if (valueL1Tri == valueL2Tri){
+            alert("ISOCELES");
+            const resuIso = alturaIsoceles(valueL1Tri, valueL2Tri, valuebaTri);
+            alert(resuIso);
+        }else {
+            alert('no');
+        }
     }
 
 
