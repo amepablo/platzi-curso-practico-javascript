@@ -1,8 +1,3 @@
-// const preciOriginal = 120;
-// const descuento = 18;
-
-
-
 function calcularPreciConDescuento(precio,descuento){
     
     const porcentajePrecioConDescuento = 100 - (descuento);
@@ -10,8 +5,6 @@ function calcularPreciConDescuento(precio,descuento){
 
     return precioConDescuento;
 }
-
-
 
 function onClickButtonPriceDiscount() {
 
@@ -44,12 +37,3 @@ function onClickButtonPriceDiscount() {
     const resultPrice = document.getElementById("resultP");
     resultPrice.innerText = "el precio con descuento es: $" + precioConDescuento;
 }
-
-
-// Imprimir varias variables en un console.log usando un objeto
-// console.log({
-//     preciOriginal,
-//     descuento,
-//     porcentajePrecioConDescuento,
-//     precioConDescuento,
-// });

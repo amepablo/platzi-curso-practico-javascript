@@ -22,3 +22,5 @@
 - Tercer paso: Crear funciones.
 
 - Cuarto paso: Integrar JS con HTML.
+
+    - Bonus: Cupones de descuento en un select
