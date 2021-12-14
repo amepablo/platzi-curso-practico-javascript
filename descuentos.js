@@ -31,7 +31,6 @@ function onClickButtonPriceDiscount() {
 
     DescuentoFinal = parseInt(discountval) + parseInt(cuponDescuento);
 
-
     const precioConDescuento = calcularPreciConDescuento(priceval,DescuentoFinal);
 
     const resultPrice = document.getElementById("resultP");
