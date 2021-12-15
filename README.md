@@ -27,10 +27,9 @@
 
 ## Taller #3: Promedio, mediana y moda
 
-- Primer paso: definir las fórmulas(regla de tres simple).
+- Primer paso: definir las fórmulas.
 
 - Segundo paso: Implementar la fórmulas en Javascript.
 
 - Tercer paso: Crear funciones.
 
-- Cuarto paso: Integrar JS con HTML.
